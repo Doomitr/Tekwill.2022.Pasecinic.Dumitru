@@ -1,1 +1,2 @@
-ECHO is on.
+Pasecinic_Dumitru.txt
+MyClass.class
