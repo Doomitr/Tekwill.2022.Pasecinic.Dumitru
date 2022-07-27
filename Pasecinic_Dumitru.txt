@@ -1,2 +1,0 @@
-Pasecinic_Dumitru.txt
-MyClass.class
