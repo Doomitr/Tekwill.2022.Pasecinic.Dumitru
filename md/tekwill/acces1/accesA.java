@@ -1,6 +1,7 @@
 package md.tekwill.acces1;
 
 public class accesA {
+
     public void FundA(){
         defaultAA();
         defaultAB();
