@@ -1,3 +1,5 @@
+package md.tekwill.lesson12HW;
+
 public class Person {
     long id = 0;
     String firstName;
