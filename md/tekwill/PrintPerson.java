@@ -1,39 +1,48 @@
-package md.tekwill.lesson12HW;
+package md.tekwill;
+
+import md.tekwill.lesson12hw.Person;
 
 public class PrintPerson {
     public static void main(String[] args) {
-
-
-
         long x = 0;
-
-        while (x<3) {
+        long y = Person.getId();
+        while (x<1000000) {
+            ++y;
             if (x == 0) {
                 Person one = new Person();
-                one.setId(x+1);
+                Person.setId(y);
                 one.setFirstName("Giorno");
                 one.setLastName("Giovanna");
                 one.printAll();
-
             }
             if (x == 1) {
                 Person two = new Person();
-                two.setId(x+1);
+                two.setId(y);
                 two.setFirstName("Takeshi");
                 two.setLastName("Kovacs");
                 two.printAll();
             }
             if (x == 2) {
                 Person three = new Person();
-                three.setId(x+1);
+                three.setId(y);
                 three.setFirstName("Federico");
                 three.setLastName("Fellini");
                 three.printAll();
+            }
+            if (x==3){
+                Person four = new Person();
+                Person.setId(y);
+                four.printAll();
+            }
+            if (x==4){
+                Person five = new Person();
+                Person.setId(y);
+                five.printAll();
             }
             x=x+1;
         }
 
         System.out.println();
-        System.out.println("IDul final este " + x);
+        System.out.println("IDul final este " + Person.getId());
     }
 }

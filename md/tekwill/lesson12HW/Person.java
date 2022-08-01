@@ -1,14 +1,14 @@
-package md.tekwill.lesson12HW;
+package md.tekwill.lesson12hw;
 
 public class Person {
-    long id = 0;
+    static long id;
     String firstName;
     String lastName;
 
-    public long getId(){
+    public static long getId(){
         return id;
     }
-    public void setId(long someId){
+    public static void setId(long someId){
         id = someId;
     }
     public String getFirstName(){
